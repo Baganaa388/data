@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecommerce Web Design</title>
-    <link rel="stylesheet" type="text/css" href="style.css"> 
+    <link rel="stylesheet" type="text/css" href="alterhomestyle.css"> 
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,7 +25,11 @@
 
         <div class="icons">
             <div class="wallet-box">
-                <a href="form.php"><button><h5>Нэвтрэх/Бүртгүүлэх</h5></button></a>
+                <form action="search.php">
+                <input type="text" id="search" name="search" class="searchbar">
+                <button type="submit"><h4>Search</h4></button>
+                <a href="login.html"><button><h4>Нэвтрэх/Бүртгүүлэх</h4></button></a>
+                </form>
             </div>
         </div>
     </header>
@@ -33,38 +37,24 @@
 
 
 
-    <section class="shop" id="shop">
+    <section class="shop" >
         <div class="button-section">
             <button><h5>Бүх бараа</h5></button>
             <button><h5>Бүх бараа</h5></button>
             <button><h5>Бүх бараа</h5></button>
             <button><h5>Бүх бараа</h5></button>
         </div>
+        <div id="search-results" class="product-grid"></div>
 
-        <div class="container">
 
+        <div class="container" id="product-container">
             <div class="box">
-                <img src="./img/aa.jpg" alt="negymbsimaa">
+                <img src="zurag.jpg" alt="negymbsimaa">
                 <h4>I'm a product</h4>
                 <h5>$15.00</h5>
+                <span>Hi i am description</span>
                 <div class="cart">
-                    <a href="#"><i class='bx bx-cart' ></i></a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="./img/aa.jpg" alt="negymbsimaa">
-                <h4>I'm a product</h4>
-                <h5>$15.00</h5>
-                <div class="cart">
-                    <a href="#"><i class='bx bx-cart' ></i></a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="./img/aa.jpg" alt="negymbsimaa">
-                <h4>I'm a product</h4>
-                <h5>$15.00</h5>
-                <div class="cart">
-                    <a href="#"><i class='bx bx-cart' ></i></a>
+                    <a href="#"><i class='bx bx-cart'></i></a>
                 </div>
             </div>
         </div>
@@ -102,7 +92,8 @@
     <div class="last">
         <p>©This code is written by Boldoo. All rights reserved</p>
     </div>
-    <script src="alterhomescript.js"></script>
+    
+<script src="script.js"></script>
 
 </body>
 </html>
