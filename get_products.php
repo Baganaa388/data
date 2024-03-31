@@ -13,7 +13,7 @@ if ($conn->connect_error) {
 }
 
 // Fetch products from database
-$sql = "SELECT * FROM products";
+$sql = "SELECT * FROM product";
 $result = $conn->query($sql);
 
 $products = array();

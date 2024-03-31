@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
     card.classList.add("box");
   
     const img = document.createElement("img");
-    img.src = product.image_url;
+    img.src = product.image;
     img.alt = product.name;
     card.appendChild(img);
   
@@ -53,9 +53,9 @@ document.addEventListener("DOMContentLoaded", function() {
     price.textContent = "$" + product.price;
     card.appendChild(price);
   
-    const description = document.createElement("span");
-    description.textContent = product.description;
-    card.appendChild(description);
+    const about = document.createElement("span");
+    about.textContent = product.about;
+    card.appendChild(about);
 
 // ded heseg
 

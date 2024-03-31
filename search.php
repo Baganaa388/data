@@ -15,7 +15,7 @@ if ($conn->connect_error) {
 $search = $_GET["search"];
 
 // Perform SQL query
-$sql = "SELECT * FROM products WHERE name LIKE '%$search%' OR description LIKE '%$search%'";
+$sql = "SELECT * FROM product WHERE name LIKE '%$search%' OR about LIKE '%$search%'";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -24,7 +24,7 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
         echo "<div class='product'>";
         echo "<h3>" . $row["name"]. "</h3>";
-        echo "<p>" . $row["description"]. "</p>";
+        echo "<p>" . $row["about"]. "</p>";
         echo "</div>";
     }
     echo "</div>";
