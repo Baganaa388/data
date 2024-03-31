@@ -3,7 +3,7 @@ include "conn.php";
 
 $errorMessage = null;   // Error message variable
 $successMessage = null;  // Success message variable
-session_start();
+#session_start();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") // Check if form is submitted via POST
 {   

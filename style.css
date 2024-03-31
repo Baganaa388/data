@@ -91,6 +91,21 @@ header{
    opacity: 0.7;
 }
 
+
+#search{
+    width: 500px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    height: auto;
+    background: #d1eeff;
+}
+#search :focus{
+    border-color: #006eff;
+}
+
+
+
 section{
     padding: 100px 8%;
 }
@@ -134,6 +149,7 @@ section{
     border-radius: 10px;
     position: relative;
     transition: all .35s ease;
+    max-width: 500px;
 }
 .box img{
     overflow: hidden;
